@@ -87,6 +87,7 @@ export function resolveOnChange<E extends HTMLInputElement | HTMLTextAreaElement
     onChange(event as React.ChangeEvent<E>);
     // reset target ref value
     target.value = originalInputValue;
+    console.log(target.value);
     return;
   }
 
